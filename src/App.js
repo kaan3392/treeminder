@@ -119,6 +119,8 @@ function App() {
       return url.replace(".com/video/", ".com/embed/video/");
     } else if (url.match(/(images.unsplash.com\/photo)/) !== null) {
       return "image";
+    } else if (url.match(/(plus.unsplash.com\/premium_photo)/) !== null) {
+      return "image";
     }
     return "unknown";
   };
